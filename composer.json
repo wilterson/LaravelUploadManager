@@ -1,0 +1,43 @@
+{
+    "name": "wiltersongarcia/laraveluploadmanager",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Wilterson Garcia",
+            "email": "wilterson_donda@hotmail.com",
+            "homepage": "http://github.com/wilterson"
+        }
+    ],
+    "homepage": "https://github.com/wiltersongarcia/laraveluploadmanager",
+    "keywords": ["Laravel", "LaravelUploadManager"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WiltersonGarcia\\LaravelUploadManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WiltersonGarcia\\LaravelUploadManager\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WiltersonGarcia\\LaravelUploadManager\\LaravelUploadManagerServiceProvider"
+            ],
+            "aliases": {
+                "LaravelUploadManager": "WiltersonGarcia\\LaravelUploadManager\\Facades\\LaravelUploadManager"
+            }
+        }
+    }
+}
